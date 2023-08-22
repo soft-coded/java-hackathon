@@ -87,8 +87,8 @@ public class Customer {
 
   @Override
   public String toString() {
-    return customerId + "," + firstName + "," + lastName + "," + address + "," + city + "," + phoneNumber + ","
-        + joiningDate;
+    return "Customer [customerId=" + customerId + ", firstName=" + firstName + ", lastName=" + lastName + ", address="
+        + address + ", city=" + city + ", phoneNumber=" + phoneNumber + ", joiningDate=" + joiningDate + "]";
   }
 
   // method to generate a random ID between 1 and 5000

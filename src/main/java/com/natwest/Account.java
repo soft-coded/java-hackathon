@@ -65,8 +65,8 @@ public class Account {
 
   @Override
   public String toString() {
-    return accountNumber + "," + customerId + ","
-        + accountBalance + "," + accountType + "," + dateOpened;
+    return "Account [accountNumber=" + accountNumber + ", customerId=" + customerId + ", accountBalance="
+        + accountBalance + ", accountType=" + accountType + ", dateOpened=" + dateOpened + "]";
   }
 
   // method to generate a random accNum between 1 and 5000

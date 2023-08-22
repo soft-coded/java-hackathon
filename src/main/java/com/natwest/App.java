@@ -100,6 +100,9 @@ public class App {
                     default:
                         break;
                 }
+
+                System.out.println("Transaction performed:");
+                System.out.println(tr.toString());
             } catch (Exception e) {
                 System.out.println(e);
             }

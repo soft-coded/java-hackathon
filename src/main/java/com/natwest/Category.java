@@ -8,11 +8,11 @@ public class Category {
   public Category() {
   }
 
-  // parameterised constructor
-  public Category(int typeId, int interest, String typeName) {
-    this.typeId = typeId;
-    this.interest = interest;
-    this.typeName = typeName;
+  // parameterised constructor, only need typeId here
+  public Category(int typeId) {
+    this.typeId = typeId; // 1 for savings, 2 for salary
+    this.interest = typeId == 1 ? 6 : 0;
+    this.typeName = typeId == 1 ? "Savings" : "Salary";
   }
 
   public int getTypeId() {

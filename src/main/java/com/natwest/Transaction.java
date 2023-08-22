@@ -65,10 +65,16 @@ public class Transaction {
     if (amount < 0)
       throw new NegativeAmountException(NEGATIVE_AMOUNT_MSG);
 
-    // we cannot actually handle the transaction without having access to the
-    // account details, so I am just returning a success message here.
-    // normally we would make a database query here to get the details of the
-    // account, but we have no database here
+    /*
+     * We cannot perform a transaction without having the details of the account
+     * that we are performing the transaction on. In a real-world scenario, we would
+     * have made a database query here to get the account details first, then update
+     * the details accordingly, and then return a success or a failure message
+     * depending upon the result of the query. But since we do not have a database
+     * here, a real transaction cannot be performed (as there is no way to fetch the
+     * account details). Therefore, I am just returning a success message from this
+     * method.
+     */
     return "Transaction successful";
   }
 
@@ -76,10 +82,16 @@ public class Transaction {
     if (amount < 0)
       throw new NegativeAmountException(NEGATIVE_AMOUNT_MSG);
 
-    // we cannot actually handle the transaction without having access to the
-    // account details, so I am just returning a success message here.
-    // normally we would make a database query here to get the details of the
-    // account, but we have no database here
+    /*
+     * We cannot perform a transaction without having the details of the account
+     * that we are performing the transaction on. In a real-world scenario, we would
+     * have made a database query here to get the account details first, then update
+     * the details accordingly, and then return a success or a failure message
+     * depending upon the result of the query. But since we do not have a database
+     * here, a real transaction cannot be performed (as there is no way to fetch the
+     * account details). Therefore, I am just returning a success message from this
+     * method.
+     */
     return "Transaction successful";
   }
 
@@ -87,10 +99,16 @@ public class Transaction {
     if (amount < 0)
       throw new NegativeAmountException(NEGATIVE_AMOUNT_MSG);
 
-    // we cannot actually handle the transaction without having access to the
-    // account details, so I am just returning a success message here.
-    // normally we would make a database query here to get the details of the
-    // account, but we have no database here
+    /*
+     * We cannot perform a transaction without having the details of the account
+     * that we are performing the transaction on. In a real-world scenario, we would
+     * have made a database query here to get the account details first, then update
+     * the details accordingly, and then return a success or a failure message
+     * depending upon the result of the query. But since we do not have a database
+     * here, a real transaction cannot be performed (as there is no way to fetch the
+     * account details). Therefore, I am just returning a success message from this
+     * method.
+     */
     return "Transaction successful";
 
   }

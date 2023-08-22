@@ -29,7 +29,7 @@ public class App {
 
         // create the customer accounts
         while (true) {
-            System.out.println("Do you want to create an account?");
+            System.out.println("\nDo you want to create an account?");
             cont = sc.next();
 
             if (cont.equalsIgnoreCase("NO"))
@@ -57,7 +57,7 @@ public class App {
 
         // perform the transactions
         while (true) {
-            System.out.println("Do you want to perform a transaction?");
+            System.out.println("\nDo you want to perform a transaction?");
             cont = sc.next();
 
             if (cont.equalsIgnoreCase("NO"))

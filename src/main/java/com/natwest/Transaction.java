@@ -67,13 +67,13 @@ public class Transaction {
 
     /*
      * We cannot perform a transaction without having the details of the account
-     * that we are performing the transaction on. In a real-world scenario, we would
-     * have made a database query here to get the account details first, then update
-     * the details accordingly, and then return a success or a failure message
-     * depending upon the result of the query. But since we do not have a database
-     * here, a real transaction cannot be performed (as there is no way to fetch the
-     * account details). Therefore, I am just returning a success message from this
-     * method.
+     * that we are performing the transaction on. Just having the account number is
+     * not enough. In a real-world scenario, we would have made a database query
+     * here to get the account details first, then update the details accordingly,
+     * and then return a success or a failure message depending upon the result of
+     * the query. But since we do not have a database here, a real transaction
+     * cannot be performed (as there is no way to fetch the account details).
+     * Therefore, I am just returning a success message from this method.
      */
     return "Transaction successful";
   }
@@ -84,13 +84,13 @@ public class Transaction {
 
     /*
      * We cannot perform a transaction without having the details of the account
-     * that we are performing the transaction on. In a real-world scenario, we would
-     * have made a database query here to get the account details first, then update
-     * the details accordingly, and then return a success or a failure message
-     * depending upon the result of the query. But since we do not have a database
-     * here, a real transaction cannot be performed (as there is no way to fetch the
-     * account details). Therefore, I am just returning a success message from this
-     * method.
+     * that we are performing the transaction on. Just having the account number is
+     * not enough. In a real-world scenario, we would have made a database query
+     * here to get the account details first, then update the details accordingly,
+     * and then return a success or a failure message depending upon the result of
+     * the query. But since we do not have a database here, a real transaction
+     * cannot be performed (as there is no way to fetch the account details).
+     * Therefore, I am just returning a success message from this method.
      */
     return "Transaction successful";
   }
@@ -101,13 +101,13 @@ public class Transaction {
 
     /*
      * We cannot perform a transaction without having the details of the account
-     * that we are performing the transaction on. In a real-world scenario, we would
-     * have made a database query here to get the account details first, then update
-     * the details accordingly, and then return a success or a failure message
-     * depending upon the result of the query. But since we do not have a database
-     * here, a real transaction cannot be performed (as there is no way to fetch the
-     * account details). Therefore, I am just returning a success message from this
-     * method.
+     * that we are performing the transaction on. Just having the account number is
+     * not enough. In a real-world scenario, we would have made a database query
+     * here to get the account details first, then update the details accordingly,
+     * and then return a success or a failure message depending upon the result of
+     * the query. But since we do not have a database here, a real transaction
+     * cannot be performed (as there is no way to fetch the account details).
+     * Therefore, I am just returning a success message from this method.
      */
     return "Transaction successful";
 

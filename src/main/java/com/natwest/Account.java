@@ -1,6 +1,7 @@
 package com.natwest;
 
 import java.time.*;
+import java.util.Random;
 
 public class Account {
   private int accountNumber, customerId;
@@ -15,7 +16,7 @@ public class Account {
   // parameterised constructor
   public Account(int accountNumber, int customerId, double accountBalance, Category accountType,
       LocalDateTime dateOpened) {
-    this.accountNumber = accountNumber;
+    this.accountNumber = accountNumber == -1 ? generateAccNum() : accountNumber;
     this.customerId = customerId;
     this.accountBalance = accountBalance;
     this.accountType = accountType;
@@ -66,6 +67,11 @@ public class Account {
   public String toString() {
     return accountNumber + "," + customerId + ","
         + accountBalance + "," + accountType + "," + dateOpened;
+  }
+
+  // method to generate a random accNum between 1 and 5000
+  public int generateAccNum() {
+    return new Random().nextInt(5000) + 1;
   }
 
   public static Account generateAccount(String accString) {

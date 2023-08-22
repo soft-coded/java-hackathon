@@ -14,8 +14,8 @@ public class App {
             return;
         }
 
-        System.out.println("Enter your customer details in , separator as follows\n" + //
-                "First Name,LastName,Address,City,Phone Number,Joining Date\n");
+        System.out.println("\nEnter your customer details in , separator as follows\n" + //
+                "First Name,LastName,Address,City,Phone Number,Joining Date(DD/MM/YYYY)");
 
         String details = sc.nextLine();
         // generate a customer object based on the details given
@@ -30,7 +30,7 @@ public class App {
         // create the customer accounts
         while (true) {
             System.out.println("Do you want to create an account?");
-            cont = sc.nextLine();
+            cont = sc.next();
 
             if (cont.equalsIgnoreCase("NO"))
                 break;
@@ -44,7 +44,7 @@ public class App {
             System.out.println("Enter the initial deposit amount:");
             double amount = sc.nextDouble();
 
-            Account acc = new Account(accType, customer.getCustomerId(), amount, cat,
+            Account acc = new Account(-1, customer.getCustomerId(), amount, cat,
                     LocalDateTime.now());
 
             // add the account to the map
@@ -58,7 +58,7 @@ public class App {
         // perform the transactions
         while (true) {
             System.out.println("Do you want to perform a transaction?");
-            cont = sc.nextLine();
+            cont = sc.next();
 
             if (cont.equalsIgnoreCase("NO"))
                 break;

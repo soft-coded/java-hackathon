@@ -1,13 +1,14 @@
 package com.natwest;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
 public class Customer {
   private int customerId;
   private String firstName, lastName, address, city;
   private long phoneNumber;
-  private LocalDateTime joiningDate;
+  private LocalDate joiningDate;
 
   // default constructor
   public Customer() {
@@ -15,7 +16,7 @@ public class Customer {
 
   // parameterised constructor
   public Customer(int customerId, String firstName, String lastName, String address, String city, long phoneNumber,
-      LocalDateTime joiningDate) {
+      LocalDate joiningDate) {
     this.customerId = customerId == -1 ? generateId() : customerId;
     this.firstName = firstName;
     this.lastName = lastName;
@@ -76,11 +77,11 @@ public class Customer {
     this.phoneNumber = phoneNumber;
   }
 
-  public LocalDateTime getJoiningDate() {
+  public LocalDate getJoiningDate() {
     return joiningDate;
   }
 
-  public void setJoiningDate(LocalDateTime joiningDate) {
+  public void setJoiningDate(LocalDate joiningDate) {
     this.joiningDate = joiningDate;
   }
 
@@ -101,6 +102,8 @@ public class Customer {
     // firstName + "," + lastName + "," + address + "," + city +
     // "," + phoneNumber + "," + joiningDate;
     String[] parts = customerString.split(",");
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
     return new Customer(
         -1,
         parts[0],
@@ -108,7 +111,7 @@ public class Customer {
         parts[2],
         parts[3],
         Long.parseLong(parts[4]),
-        LocalDateTime.parse(parts[5]));
+        LocalDate.parse(parts[5], formatter));
   }
 
 }
